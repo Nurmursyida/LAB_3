@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.print-area{
+    width: 110%;
+    margin: 2px auto;
+  
+
+}
+.print-area .header{
+    width: 120%;
+    height: 250px;
+    background-color: grey;
+    display:flex;
+    align-items: center;
+}
+
+.header img{
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border: 5px solid white ;
+box-shadow: 3px 3px 10px rgb(156, 156, 163);
+cursor: pointer;
+transition: .5s;
+user-select: none;
+filter:grayscale(0%);
+
+}
+.header img:hover{
+
+filter:grayscale(0%);
+transform: scale(2.05);
+box-shadow: 3px 3px 20px rgb(157, 157, 162);
+
+
+}
+.header-text{
+    color: white;
+    width:60%;
+    margin-left: 500px;
+
+}
+.header-text h1{
+    font-size: 40px;
+    font-weight: normal;
+ 
+ 
+}
+.header-text p{
+    font-size: 20px;
+    color: lightgray;
+    margin-left: 350px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-area{
+    width: 20%;
+    background-color: rgb(204, 194, 194);
+text-align: center;
+padding-bottom: 10px;
+
+}
+.left-area .contact{
+    margin-top: 50%;
+    padding: 0 30px;
+
+}
+.contact h4{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+
+
+
+}
+.contact h5{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.contact p{
+    width: 100%;
+
+}
+.skills{
+    margin-top: 30px;
+
+}
+.skills h1{
+
+font-size: 25px;
+font-weight: normal;
+}
+.bars{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+grid-gap:20px 10px;
+padding: 0 20px;
+}
+.bars .bar p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.bar span{
+display: block;
+width: 98%;
+height: 10px;
+background-color: rgb(10, 10, 10);
+margin-top: 10px;
+border-radius: 10px;
+position: relative;
+
+
+}
+.bar span::before{
+    position: absolute;
+    content: "";
+    width: 83%;
+    height: 83%;
+    background-color: rgb(229, 127, 127);
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+
+
+}
+.follow{
+   margin-top: 40px;
+   font-size: 30px;
+   font-weight: normal;
+}
+.follow h4{
+    font-size: 15px;
+    margin: 10px 0;
+
+}
+.follow p {
+    font-size: 16px;
+    color: blue;
+
+}
+.language{
+    margin-top: 7px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+
+.right-area{
+    width: 70%;
+padding: 50px;
+
+}
+.right-area h1{
+    font-size:32px ;
+    font-weight: normal;
+    color: rgb(18, 17, 19);
+    text-align: justify;
+}
+
+
+.right-area p{
+    padding-left: 20px;
+ 
+   
+    color: rgb(7, 7, 7);
+    margin-top: 10px;
+
+}
+
+.work-group h3{
+    color: rgb(31, 27, 31);
+}
+.work-group h4{
+color: rgb(19, 20, 20);
+}
+.education-group{
+    column-count: 3;
+}
+.project-group{
+    color: rgb(31, 27, 31);  
+   
+
+
+}
